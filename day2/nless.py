@@ -1,4 +1,5 @@
 #list中的前n个最小的数
+#sort改变原数组，sorted不改变原数组，创建新数组
 def nless(N):
     #N.sort() 
     N = sorted(N)
