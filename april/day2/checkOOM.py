@@ -11,7 +11,7 @@ OOMCOM = 'kubectl describe pod --all-namespaces |grep -C 100 \'OOMKilled\' -i'
 #loging
 logger = logging.getLogger(__name__)
 logger.setLevel(level = logging.INFO)
-handler = logging.FileHandler("log.txt")
+handler = logging.FileHandler("day2/OOM.log")
 handler.setLevel(logging.INFO)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
